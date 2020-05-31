@@ -1,10 +1,5 @@
 <!doctype HTML>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>とばたぎせんAR</title>
-　<title>しばらくおまちください。</title>
-
   <!-- A-Frameを読み込み -->
   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
   <!-- AR.jsを読み込み -->
@@ -24,9 +19,9 @@
   <!-- a-markerのtypeにpatternを設定, 作ったpattファイルをurlにを指定 -->
   <a-marker type="pattern" url="job.patt">
     <!-- idを指定して3Dモデルを表示 -->
-    <a-entity gltf-model="#job" position="0 .5 0" scale="-0.5 0.5 -0.5 rotation="0 0 0" animation-mixer></a-entity>
+    <a-entity gltf-model="#job" position="0 .5 0" scale="-0.3 0.3 -0.3 rotation="0 0 0" animation-mixer></a-entity>
     <a-animation  attribute="rotation" to="0 360 0" dur="7000" repeat="indefinite" easing="linear"></a-animation>
-    <a-text value="じょぶまる。" position="0 1.3 0" align="center"></a-text>
+    <a-text value="JOB" position="0 1.3 0" align="center"></a-text>
   </a-marker>
   
  <!-- カメラを追加 -->
